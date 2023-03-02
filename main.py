@@ -1,25 +1,20 @@
-my_list = [True, 786, 3.14, 'text', 70.2]
-second_list = [123, 'text']
-print(my_list)
-print(my_list[0])
-print(my_list[1:3])
-print(my_list[2:])
-print(second_list *2)
-print(my_list + second_list)
-
-
-
-my_tuple = (True, 786, 3.14, 'text', 70.2)
-second_tuple = (123, 'text')
-print(my_tuple)
-print(my_tuple[0])
-print(second_tuple*2)
-print(my_tuple + second_tuple)
-
-
-my_dict = {}
-my_dict["country"]="Mexico"
-print(my_dict["country"])
-another_dict= {"number":23, 2: True, "my_list":[1,2,3]}
-print(another_dict.keys())
-print(another_dict.values())
+a = int(input('Введите трехзначное число '))
+s = a // 100;
+d = (a - s*100) // 10;
+e = a - s*100 - d*10;
+b = e*100 + d*10 + s;
+r = a - b;
+print(r)
+v = int(input('Введите трёхзначное число: '))
+e = v % 10
+v = v // 10
+d = v % 10
+v = v // 10
+s = v % 10
+if ((e + d + s) < 100) and ((e+d+s)>10):
+   print('Сумма цифр является двухзначным числом')
+a = int(input('Введите число а '))
+if (e+d+s) % a == 0:
+   print('Его сумма кратна числу ', a)
+else:
+   print('Его сумма не кратна числу ', a)
